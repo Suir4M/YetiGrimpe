@@ -1,1 +1,201 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yeti 85 · Club d’escalade à La Roche-sur-Yon (concept de refonte)</title>
+  <meta name="description" content="Club d’escalade de La Roche-sur-Yon : mur de bloc de niveau national, cours pour les enfants, créneaux autonomes du mardi au samedi.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#2150e6">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@50..150,400..900&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Aller au contenu</a>
+  <div class="concept-bar"><p>Proposition de refonte du site du club. Projet non officiel.</p></div>
 
+  <header class="band--mat on-mat">
+    <div class="site-header wrap">
+      <a class="brand" href="index.html"><img src="img/logo.jpg" width="40px" height="auto"> Yeti 85</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+      <nav class="nav" id="menu" aria-label="Navigation principale">
+        <a href="grimper.html">Grimper chez nous</a>
+        <a href="horaires.html">Horaires</a>
+        <a href="evenements.html">Événements</a>
+        <a href="index.html#club">Le club</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="band--mat on-mat">
+      <div class="hero wrap">
+        <div class="hero-text">
+          <h1>Escalade tranquille, ambitions intrépides</h1>
+          <p class="lede">Yeti 85 est le club d’escalade de La Roche-sur-Yon&nbsp;: un mur de bloc de niveau national, deux murs de difficulté, des cours pour les enfants et des créneaux en autonomie du mardi au samedi.</p>
+          <p class="waitlist">Les groupes encadrés sont presque tous complets, mais il existe d’autres façons de rejoindre le club.</p>
+          <p class="actions">
+            <a class="btn" href="grimper.html">Grimper chez nous</a>
+            <a class="btn btn--white" href="horaires.html">Voir les horaires</a>
+          </p>
+        </div>
+
+        <svg class="wall" viewBox="0 0 520 620" role="group" aria-label="Quatre prises pour choisir ton point de départ">
+          <defs>
+            <pattern id="bolts" width="38" height="38" patternUnits="userSpaceOnUse">
+              <circle cx="19" cy="19" r="2.6" fill="#0f1720" fill-opacity=".16"/>
+            </pattern>
+          </defs>
+          <rect x="6" y="6" width="508" height="608" rx="22" fill="#f6f8fa" stroke="#0f1720" stroke-width="5"/>
+          <rect x="6" y="6" width="508" height="608" rx="22" fill="url(#bolts)"/>
+          <path d="M6 212H514M6 416H514" stroke="#0f1720" stroke-opacity=".22" stroke-width="3"/>
+          <path d="M160 480C260 470 330 440 340 360S230 270 170 235S330 190 350 115" fill="none" stroke="#0f1720" stroke-width="4" stroke-dasharray="1 13" stroke-linecap="round"/>
+
+          <path class="decor f-jaune" style="--x:70px;--y:72px;--r:-20deg;--d:.05s" d="M-22 4C-26-14-4-26 16-20C32-14 30 12 10 20C-8 26-20 20-22 4Z"/>
+          <path class="decor f-tomate" style="--x:462px;--y:232px;--r:35deg;--d:.12s" d="M-22 4C-26-14-4-26 16-20C32-14 30 12 10 20C-8 26-20 20-22 4Z"/>
+          <path class="decor f-menthe" style="--x:66px;--y:352px;--r:150deg;--d:.2s" d="M-22 4C-26-14-4-26 16-20C32-14 30 12 10 20C-8 26-20 20-22 4Z"/>
+          <path class="decor f-jaune" style="--x:442px;--y:524px;--r:80deg;--d:.28s" d="M-22 4C-26-14-4-26 16-20C32-14 30 12 10 20C-8 26-20 20-22 4Z"/>
+          <path class="decor f-tomate" style="--x:310px;--y:588px;--r:-60deg;--d:.35s" d="M-22 4C-26-14-4-26 16-20C32-14 30 12 10 20C-8 26-20 20-22 4Z"/>
+
+          <a class="hold" href="grimper.html#debutant" aria-label="Je débute : les options pour les adultes débutants" style="--x:160px;--y:480px;--d:.15s">
+            <path class="blob f-menthe" d="M-88 10C-98-36-42-64 12-60C68-56 98-26 90 16C82 54 28 68-24 62C-62 58-82 42-88 10Z"/>
+            <text x="0" y="0">Je débute</text>
+          </a>
+          <a class="hold" href="grimper.html#enfants" aria-label="Mon enfant : les groupes pour les enfants et les ados" style="--x:340px;--y:360px;--d:.25s">
+            <path class="blob f-jaune" d="M-80-6C-84-44-30-62 22-58C74-54 94-20 86 18C78 56 20 62-28 58C-66 54-78 30-80-6Z"/>
+            <text x="0" y="0">Mon enfant</text>
+          </a>
+          <a class="hold" href="grimper.html#autonome" aria-label="Autonome : prendre rendez-vous pour grimper en autonomie" style="--x:170px;--y:235px;--d:.35s">
+            <path class="blob f-tomate" d="M-92 4C-96-34-48-58 4-62C58-66 96-34 88 6C80 46 36 64-16 62C-60 60-88 38-92 4Z"/>
+            <text x="0" y="0">Autonome</text>
+          </a>
+          <a class="hold" href="evenements.html#benevoles" aria-label="Un coup de main : devenir bénévole" style="--x:350px;--y:115px;--d:.45s">
+            <path class="blob f-chalk" d="M-78 12C-92-24-50-62 6-62C60-62 96-28 86 12C76 52 24 64-22 60C-52 58-72 38-78 12Z"/>
+            <text><tspan x="0" y="-13">Un coup</tspan><tspan x="0" y="14">de main</tspan></text>
+          </a>
+        </svg>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="demi-titre">
+      <div class="wrap bib-grid">
+        <div class="bib" aria-hidden="true">
+          <p class="bib-club">YETI 85</p>
+          <p class="bib-date">23–24</p>
+          <p class="bib-month">janvier 2027</p>
+        </div>
+        <div class="bib-text">
+          <h2 id="demi-titre">Demi-finale du Championnat de France de bloc</h2>
+          <p>Les 23 et 24 janvier 2027, plus de 500 grimpeurs viennent à La Roche-sur-Yon. Pour tenir un week-end pareil, le club a besoin de bénévoles et de partenaires.</p>
+          <p class="actions">
+            <a class="btn" href="evenements.html#benevoles">Devenir bénévole</a>
+            <a class="btn btn--white" href="evenements.html#partenaires">Soutenir l’événement</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--white" aria-labelledby="depart-titre">
+      <div class="wrap">
+        <h2 id="depart-titre">Choisis ton point de départ</h2>
+        <p class="intro">Selon ton âge et ton niveau, l’entrée au club n’est pas la même. Trois cas de figure&nbsp;:</p>
+        <ul class="paths">
+          <li class="path path--menthe">
+            <span class="dot" aria-hidden="true"></span>
+            <div>
+              <h3>Adulte débutant·e</h3>
+              <p>Les groupes encadrés sont presque tous complets, mais tu peux t’inscrire sur la liste d’attente. En attendant, une licence bloc te permet de grimper sur les créneaux autonomes, en bloc uniquement. S’il reste de la place, on te propose une séance d’essai.</p>
+              <a href="grimper.html#debutant">Voir les options pour débuter</a>
+            </div>
+          </li>
+          <li class="path path--jaune">
+            <span class="dot" aria-hidden="true"></span>
+            <div>
+              <h3>Enfant ou ado</h3>
+              <p>Des groupes par tranche d’âge, des plus jeunes aux ados du samedi, encadrés par nos initiateurs bénévoles. Les places partent vite&nbsp;: une liste d’attente est ouverte.</p>
+              <a href="grimper.html#enfants">Voir les groupes</a>
+            </div>
+          </li>
+          <li class="path path--tomate">
+            <span class="dot" aria-hidden="true"></span>
+            <div>
+              <h3>Grimpeur·se autonome</h3>
+              <p>Écris-nous pour prendre rendez-vous. On vérifie ta maîtrise des règles de sécurité, puis tu peux grimper seul·e sur les créneaux autonomes, du mardi au samedi.</p>
+              <a href="grimper.html#autonome">Prendre rendez-vous</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="club" aria-labelledby="club-titre">
+      <div class="wrap venues">
+        <div>
+          <h2 id="club-titre">Deux salles, plus de 1&nbsp;000&nbsp;m²</h2>
+          <p>Le club grimpe à la salle omnisport Rivoli, à La Roche-sur-Yon, et sur la structure départementale du Vendéspace, à Mouilleron-le-Captif. Les voies de bloc et de difficulté sont renouvelées plusieurs fois dans l’année.</p>
+          <p>Les débutants et les jeunes sont encadrés par des initiateurs SAE bénévoles.</p>
+        </div>
+        <dl class="facts">
+          <div>
+            <dt>Salle Rivoli</dt>
+            <dd>Un mur de bloc de niveau national et deux murs de difficulté. Complexe sportif Rivoli, impasse Marengo, La Roche-sur-Yon.</dd>
+          </div>
+          <div>
+            <dt>Vendéspace</dt>
+            <dd>Une structure artificielle d’escalade départementale à Mouilleron-le-Captif, avec des créneaux autonomes le jeudi.</dd>
+          </div>
+          <div>
+            <dt>Compétition</dt>
+            <dd>Le club accueille les championnats départementaux de bloc et, en alternance avec d’autres clubs, les régionaux. Ses compétiteurs vont jusqu’au championnat de France.</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section section--white" aria-labelledby="dates-titre">
+      <div class="wrap">
+        <h2 id="dates-titre">Prochains rendez-vous</h2>
+        <ul class="dates">
+          <li class="date">
+            <time class="when" datetime="2026-10-31"><strong>31</strong><span>octobre 2026</span></time>
+            <div>
+              <h3>Coupe des jeunes grimpeurs</h3>
+              <p>Salle Rivoli, de 13&nbsp;h à 18&nbsp;h.</p>
+            </div>
+          </li>
+          <li class="date">
+            <time class="when" datetime="2027-01-23/2027-01-24"><strong>23–24</strong><span>janvier 2027</span></time>
+            <div>
+              <h3>Demi-finale du Championnat de France de bloc</h3>
+              <p>À La Roche-sur-Yon. Le club cherche des bénévoles et des partenaires.</p>
+            </div>
+          </li>
+        </ul>
+        <p class="intro" style="margin-top:2rem">Chaque année, le club organise aussi The BLOC, une journée de grimpe ouverte à ceux qui viennent pour la performance comme à ceux qui viennent pour s’amuser. La date sera annoncée.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer on-mat" id="contact">
+    <div class="wrap grid">
+      <div>
+        <h2>Contact</h2>
+        <address>
+          <p class="acro">Yonnaise Escalade Tranquille Intrépide</p>
+          <p>Boîte n°&nbsp;107<br>71 boulevard Aristide Briand<br>85000 La Roche-sur-Yon</p>
+          <p><a href="mailto:85yeti@gmail.com">85yeti@gmail.com</a></p>
+        </address>
+      </div>
+      <div class="legal">
+        <p>Cette page est une proposition de refonte réalisée à titre de projet personnel. Ce n’est pas le site officiel du club.</p>
+        <p>Les informations viennent du site actuel, <a href="http://yeti85.com">yeti85.com</a>, et sont à confirmer avec le club.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

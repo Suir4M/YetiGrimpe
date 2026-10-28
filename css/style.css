@@ -69,7 +69,7 @@ section.page-banner {
   position: relative;
   background:
     linear-gradient(rgba(15, 23, 32, 0.7), rgba(15, 23, 32, 0.7)),
-    url("/img/banniere1.jpg") center / cover no-repeat;
+    url("/YetiGrimpe/img/banniere1.jpg") center / cover no-repeat;
 }
 
 

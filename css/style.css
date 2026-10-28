@@ -60,7 +60,18 @@ p { margin: 0 0 1em; }
 
 /* ---------- Bande bleue (en-tête de chaque page) ---------- */
 
-.band--mat { background: var(--ink); color: #fff;}
+
+.band--mat { 
+  background: var(--ink); color: #fff;
+}
+
+section.page-banner {
+  position: relative;
+  background:
+    linear-gradient(rgba(15, 23, 32, 0.7), rgba(15, 23, 32, 0.7)),
+    url("/img/banniere1.jpg") center / cover no-repeat;
+}
+
 
 .site-header {
   display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
@@ -282,13 +293,6 @@ p { margin: 0 0 1em; }
   .slots { display: grid; grid-template-rows: none; grid-template-columns: 1fr; gap: 0.5rem; }
   .slot { grid-row: auto; grid-column: auto; font-size: 1rem; padding: 0.55rem 0.8rem; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.2rem 1rem; }
   .slot strong { display: inline; }
-}
-
-main .band--mat{
-  background-image: url(../img/banniere1.jpg);
-  background-position: center; 
-  background-repeat: no-repeat; 
-  background-size: cover;
 }
 
 /* ---------- Pied de page ---------- */

@@ -1,35 +1,39 @@
-// Yeti 85 – proposition de refonte
-// Deux petites choses : le menu mobile, et la mise en avant du jour courant dans le planning.
+// Yeti 85 – interactions communes aux différentes pages.
 
-(function () {
-  var toggle = document.querySelector('.nav-toggle');
-  var nav = document.getElementById('menu');
+const menuButton = document.querySelector(".nav-toggle");
+const navigation = document.getElementById("menu");
 
-  function closeMenu(returnFocus) {
-    if (!nav || !toggle) return;
-    nav.classList.remove('is-open');
-    toggle.setAttribute('aria-expanded', 'false');
-    if (returnFocus) toggle.focus();
-  }
+function closeNavigation({ restoreFocus = false } = {}) {
+  if (!menuButton || !navigation) return;
 
-  if (toggle && nav) {
-    toggle.addEventListener('click', function () {
-      var open = nav.classList.toggle('is-open');
-      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-    });
+  navigation.classList.remove("is-open");
+  menuButton.setAttribute("aria-expanded", "false");
 
-    nav.addEventListener('click', function (event) {
-      if (event.target.closest('a')) closeMenu(false);
-    });
+  if (restoreFocus) menuButton.focus();
+}
 
-    document.addEventListener('keydown', function (event) {
-      if (event.key === 'Escape' && nav.classList.contains('is-open')) closeMenu(true);
-    });
-  }
-
-  // Dimanche = 0 ... samedi = 6, comme Date.getDay()
-  var today = new Date().getDay();
-  document.querySelectorAll('.day[data-day]').forEach(function (day) {
-    if (Number(day.dataset.day) === today) day.classList.add('is-today');
+if (menuButton && navigation) {
+  menuButton.addEventListener("click", () => {
+    const isOpen = navigation.classList.toggle("is-open");
+    menuButton.setAttribute("aria-expanded", String(isOpen));
   });
-})();
+
+  navigation.addEventListener("click", (event) => {
+    if (event.target.closest("a")) closeNavigation();
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && navigation.classList.contains("is-open")) {
+      closeNavigation({ restoreFocus: true });
+    }
+  });
+}
+
+// Met en évidence le jour actuel dans le planning (dimanche = 0, samedi = 6).
+const today = new Date().getDay();
+
+document.querySelectorAll(".day[data-day]").forEach((day) => {
+  if (Number(day.dataset.day) === today) {
+    day.classList.add("is-today");
+  }
+});
